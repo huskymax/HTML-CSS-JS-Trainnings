@@ -4,12 +4,17 @@
 <head>
     <title>css_1</title>
     <link rel="stylesheet" type="text/css" href="css_1.css">
+    <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <script src="js_1.js"></script>
 </head>
 
 <body>
     <div class=bigbox>
-        <div class="box">
+        <div class="box" >
+            <p></p>
+        </div>
+        <div class="box" >
             <p></p>
         </div>
         <div class="box">
@@ -33,9 +38,12 @@
         <div class="box">
             <p></p>
         </div>
-        <div class="box">
-            <p></p>
-        </div>
+    </div>
+    <div class="Beginbutton"  onmouseover="mousechange1()"  onmouseout="initcss1()"  onclick="changecss1();changebox()">
+        <p class="p1">开始闪</p>
+    </div>
+    <div class="Endbutton" onmouseover="mousechange2()"  onclick="changecss2();stopchange()"  onmouseout="initcss2()">
+        <p class="p2">结束闪</p>
     </div>
 </body>
 
