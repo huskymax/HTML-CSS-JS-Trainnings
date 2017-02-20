@@ -18,12 +18,12 @@ function initcss2() {
     document.getElementsByClassName('Endbutton')[0].style.backgroundColor = "#fff";
 }
 
-function mousechange1(){
-document.getElementsByClassName('Beginbutton')[0].style="cursor:pointer";
+function mousechange1() {
+    document.getElementsByClassName('Beginbutton')[0].style = "cursor:pointer";
 }
 
-function mousechange2(){
-document.getElementsByClassName('Endbutton')[0].style="cursor:pointer";
+function mousechange2() {
+    document.getElementsByClassName('Endbutton')[0].style = "cursor:pointer";
 }
 
 function randomColor() {
@@ -38,6 +38,7 @@ function randomColor() {
 var blink;
 
 function changebox() {
+    clearTimeout(blink);
     blink = setTimeout(changebox, 1000);
     var number = new Array()
     number[0] = Math.floor(Math.random() * 9);
@@ -53,7 +54,8 @@ function changebox() {
     document.getElementsByClassName('box')[number[0]].style.backgroundColor = randomColor();
     document.getElementsByClassName('box')[number[1]].style.backgroundColor = randomColor();
     document.getElementsByClassName('box')[number[2]].style.backgroundColor = randomColor();
-    setTimeout(restore,800);
+    setTimeout(restore, 300);
+
     function restore() {
         document.getElementsByClassName('box')[number[0]].style.backgroundColor = "#f8630e";
         document.getElementsByClassName('box')[number[1]].style.backgroundColor = "#f8630e";
